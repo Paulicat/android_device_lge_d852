@@ -35,6 +35,11 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PACKAGES += \
     init.galbi.bt.sh \
     init.galbi.bt_vendor.rc
+    
+# Boot animation
+TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_BOOTANIMATION_HALF_RES := true
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -43,6 +48,9 @@ PRODUCT_COPY_FILES += \
 # Radio
 PRODUCT_PACKAGES += \
     librmnetctl
+
+PRODUCT_PACKAGES += \
+	Eleven
 
 # Wifi
 PRODUCT_PACKAGES += \
